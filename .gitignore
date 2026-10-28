@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# MLflow / datos generados
+mlruns/
+mlartifacts/
+mlflow.db
+datos/*.parquet
+datos/*.csv
+datos/cuarentena/
+
+# Bitácora de auditoría generada localmente
+auditoria.jsonl
+
+# OPA
+*.tar.gz
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Docker
+docker-compose.override.yml
+
+# Editores / SO
+.idea/
+.vscode/
+.DS_Store
